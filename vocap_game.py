@@ -100,11 +100,11 @@ ans2 = st.text_input(
     value=st.session_state.ans2_val,
 )
 ans3 = st.text_input(
-    "ข้อ 3: A `p _ n` to write an anser.",
+    "ข้อ 3: A `p _ n` to write an anser. 🖊️",
     value=st.session_state.ans3_val,
 )
 ans4 = st.text_input(
-    "ข้อ 4: When we eat `l _ m _ n` we will taste sour.",
+    "ข้อ 4: When we eat `l _ m _ n` we will taste sour. 🍋",
     value=st.session_state.ans4_val,
 )
 
