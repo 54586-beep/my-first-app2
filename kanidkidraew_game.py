@@ -147,5 +147,5 @@ if st.session_state.get("is_ended", False):
     show_result_dialog(ans1, ans2, ans3, ans4, ans5)
 
 st.divider()
-st.write("wdsawdsawdsawdsawdsawdsawdsa")
+st.write("กลุ่มที่7 กลุ่มที่sigmaที่สุด")
 
