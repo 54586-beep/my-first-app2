@@ -27,7 +27,7 @@ def reset_game():
     st.session_state.start = time.time()  # เริ่มเวลาใหม่
     st.session_state.is_ended = False  # ปิด Dialog
 
-
+st.title("⏱️ เกมคิดเลขเร็ว")
 # ----------------------------------------------------
 # 📌 ฟังก์ชัน MessageBox (Dialog)
 # ----------------------------------------------------
