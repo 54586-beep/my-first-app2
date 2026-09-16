@@ -2,6 +2,11 @@ import time
 import streamlit as st
 
 st.title("⏱️ เกมคิดเลขเร็ว")
+<style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
 
 # 1. กำหดค่าเริ่มต้นใน session_state ถ้ายังไม่มี
 if "ans1_val" not in st.session_state:
@@ -47,41 +52,39 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5):
         st.success("✅ ข้อ 1: ถูกต้อง")
         score += 1
     else:
-        st.error(f"❌ ข้อ 1: ยังไม่ถูกต้อง (คุณตอบ '{u_ans1}')")
+        st.error(f"❌ ข้อ 1: son🥀 (คุณตอบ '{u_ans1}')")
 
     # ตรวจข้อ 2
     if u_ans2 == "3":
         st.success("✅ ข้อ 2: ถูกต้อง")
         score += 1
     else:
-        st.error(f"❌ ข้อ 2: ยังไม่ถูกต้อง (คุณตอบ '{u_ans2}')")
+        st.error(f"❌ ข้อ 2: son🥀 (คุณตอบ '{u_ans2}')")
       
     if u_ans3 == "6":
         st.success("✅ ข้อ 3: ถูกต้อง")
         score += 1
     else:
-        st.error(f"❌ ข้อ 3: ยังไม่ถูกต้อง (คุณตอบ '{u_ans3}')")
+        st.error(f"❌ ข้อ 3: son🥀 (คุณตอบ '{u_ans3}')")
       
     if u_ans4 == "54":
         st.success("✅ ข้อ 4: ถูกต้อง")
         score += 1
     else:
-        st.error(f"❌ ข้อ 4: ยังไม่ถูกต้อง (คุณตอบ '{u_ans4}')")
+        st.error(f"❌ ข้อ 4: son🥀 (คุณตอบ '{u_ans4}')")
       
     if u_ans5 == "67":
         st.success("✅ ข้อ 5: ถูกต้อง")
         score += 1
     else:
-        st.error(f"❌ ข้อ 5: ยังไม่ถูกต้อง (คุณตอบ '{u_ans5}')")
-
-    # ✏️ [พื้นที่สำหรับนักเรียน]: เพิ่มตรวจข้อ 3, 4 ตรงนี้
+        st.error(f"❌ ข้อ 5: son🥀 (คุณตอบ '{u_ans5}')")
 
     st.info(f"🏆 ได้คะแนนรวม: {score} คะแนน")
 
     if score == 5:
         st.success("🎉 คุณเป็นราชาgiftmath!")
     else:
-        st.error("💀 คุณแพ้เกม!")
+        st.error("💀 Are we dead ass🥀")
 
 
 # ----------------------------------------------------
@@ -91,7 +94,7 @@ st.button("🎮 เริ่มเล่นเกม", on_click=reset_game)
 
 # 2. แถบแสดงเวลานับถอยหลัง
 if "start" in st.session_state and not st.session_state.get("is_ended", False):
-    time_left = int(10 - (time.time() - st.session_state.start))
+    time_left = int(15 - (time.time() - st.session_state.start))
 
     if time_left > 0:
         st.error(f"⏳ เหลือเวลา: {time_left} วินาที")
