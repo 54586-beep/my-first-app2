@@ -3,17 +3,17 @@ import streamlit as st
 
 st.title("⏱️ เกมคิดเลขเร็ว")
 
-        st.markdown(
-                """
-                <style>
-                .stApp {
-                    background-color: #98B9D0;
-                    color: #98B9D0;
-                }
-                </style>
-                """, 
-                unsafe_allow_html=True
-        )
+st.markdown(
+        """
+        <style>
+        .stApp {
+                background-color: #98B9D0;
+                color: #98B9D0;
+         }
+         </style>
+          """, 
+        unsafe_allow_html=True
+)
                 
 
 # 1. กำหดค่าเริ่มต้นใน session_state ถ้ายังไม่มี
