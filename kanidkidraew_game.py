@@ -7,8 +7,8 @@ st.title("⏱️ เกมคิดเลขเร็ว")
                 """
                 <style>
                 .stApp {
-                    background-color: ligthblue;
-                    color: ligthblue;
+                    background-color: #98B9D0;
+                    color: #98B9D0;
                 }
                 </style>
                 """, 
