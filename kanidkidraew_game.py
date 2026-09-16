@@ -2,14 +2,16 @@ import time
 import streamlit as st
 
 st.title("⏱️ เกมคิดเลขเร็ว")
+
         st.markdown(
                 """
                 <style>
                 .stApp {
                     background-color: ligthblue;
+                    color: ligthblue;
                 }
                 </style>
-                """
+                """, 
                 unsafe_allow_html=True
         )
                 
