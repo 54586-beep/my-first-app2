@@ -2,13 +2,17 @@ import time
 import streamlit as st
 
 st.title("⏱️ เกมคิดเลขเร็ว")
-        <head>
-          <style>
-                body {
-                    background-color: lightblue;
-                         }
-          </style>
-        </head>
+        st.markdown(
+                """
+                <style>
+                .stApp {
+                    background-color: ligthblue;
+                }
+                </style>
+                """
+                unsafe_allow_html=True
+        )
+                
 
 # 1. กำหดค่าเริ่มต้นใน session_state ถ้ายังไม่มี
 if "ans1_val" not in st.session_state:
